@@ -91,10 +91,10 @@ Let's look at the extreme case where up to 10000 devices will transmit within 1 
 The above simulation only take into account the spectrum use around 1 gateway, of course multiple gateways can detect signals which will raise the packet delivery ratio. However, the above simulations show the limitation of the spectrum in a specific area.
 Both technologies can use the maximum allowed transmit power defined by ETSI (14 dbm). A difference between LoraWAN and Sigfox is that the LoraWAN gateways can dictate the transmit power to the endnodes, limiting their range, of course this also means there is more download traffic to the nodes. And the downlink also has to take into account the 10% duty cycle. If we take e.g. the Hatta RF propagation model for urban environments and we limit for LoraWAN the transmission power to Z dbm, taking into account the sensitivity level of -123  dbm (as stated in the Semtech datasheets) for SF7 we have an estimated range of 0.860 km (in an urban environment,1.7km suburban), resulting in a coverage of 3 km² . Although you can of course define the output power of the Sigfox module it is not controlled by the network with a sensitivity  of -130 dbm and a TX power of 14 dbm the estimated urban range (using the Hatta model) is 3 km, using a TX power of 7 dbm the range is  1.9 km.
 
-##Power Consumption
+## Power Consumption
 coming up soon...
 
-##References
+## References
 
     Semtech LoRa FAQ
     Semtech AN1200.22 LoRa Modulation Basics
